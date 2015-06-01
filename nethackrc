@@ -1,0 +1,3 @@
+OPTIONS=boulder:0
+OPTIONS=time, autopickup:off
+

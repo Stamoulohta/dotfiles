@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# The current directory used for linking.
+dir=`pwd`
+
+# The files and the paths to be linked.
+# Add more to the end of the list.
+filepaths+=("DIR_COLORS /etc/DIR_COLORS")
+filepaths+=("bash.bashrc /etc/bash.bashrc")
+filepaths+=("nethackrc")
+filepaths+=("rc.lua /etc/xdg/awesome/rc.lua")
+filepaths+=("vconsole.conf /etc/vconsole.conf")
+
+# Check for root uid and exit of failure.
+if [ $UID -ne 0 ]
+then
+    echo "Permission denied. Are you root?"
+    exit 2
+fi
+
+# Main loop.
+for (( i=0; i<${#filepaths[@]}; i++));
+do
+    file=`echo ${filepaths[$i]} | awk -F' ' '{print $1}'` # Geting the file.
+    path=`echo ${filepaths[$i]} | awk -F' ' '{print $2}'` # Geting the path.
+    if [ -z $path ] # Unknown destination.
+    then
+        echo "$file's path is not known. please link manualy."
+    else
+        echo -n "link $file to $path ? (y/n) "
+        read -n 1
+        if [ "$REPLY" == "y" -o "$REPLY" == "Y" ] # User agreement.
+        then
+            if [ -e $path ] # File already exists.
+            then
+                mv $path $path.old # Backing it up.
+            fi
+            ln -s $dir/$file $path # Linking.
+            echo
+        else
+            echo -e "\t[ canceled ]" # User canceled.
+        fi
+    fi
+done
