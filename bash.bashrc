@@ -11,7 +11,7 @@ function get_color_prompt {
   hOST="\h"
   dIR="\[\e[1;97m\]\W${oFF}"
 
-  if [ $UID -eq 0 ]; then 
+  if [ $UID -eq 0 ]; then
     uSER="\[\e[0;31m\]\u"
     PS2="\[\e[0;31m\]-> ${oFF}"
   else
@@ -29,7 +29,7 @@ function get_color_prompt {
 }
 
 function get_plain_prompt {
-  if [ "$?" ]; then
+  if [ "$?" -gt 0 ]; then
     xs=":( "
   else
     xs=""
@@ -49,11 +49,11 @@ case ${TERM} in
     PROMPT_COMMAND=get_plain_prompt
     DISABLE_COLOR=1
     ;;
-  xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
+  xterm*|rxvt*|Eterm|aterm|kterm|gnome*|screen)
     export EDITOR="gvim"
     georgey
     ;;
-  screen|linux)
+  *linux)
     export EDITOR="vim"
     georgey
     ;;
