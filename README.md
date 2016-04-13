@@ -12,6 +12,7 @@ Many of them may work in other distros as well.
 |  3 | nethackrc     | ?                         |
 |  4 | rc.lua        | /etc/xdg/awesome/rc.lua   |
 |  5 | vconsole.conf | /etc/vconsole.conf        |
+|  6 | local.conf    | /etc/fonts/local.conf     |
 
 ---
 ####Script

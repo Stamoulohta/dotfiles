@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # The current directory used for linking.
-dir=`pwd`
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # The files and the paths to be linked.
 # Add more to the end of the list.
@@ -10,6 +10,7 @@ filepaths+=("bash.bashrc /etc/bash.bashrc")
 filepaths+=("nethackrc")
 filepaths+=("rc.lua /etc/xdg/awesome/rc.lua")
 filepaths+=("vconsole.conf /etc/vconsole.conf")
+filepaths+=("local.conf /etc/fonts/local.conf")
 
 # Check for root uid and exit of failure.
 if [ $UID -ne 0 ]
