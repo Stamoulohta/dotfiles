@@ -240,6 +240,7 @@ EXEC 01;32
 .y     01;30 # yacc source code
 .yxx   01;30 # bison source code
 .vim   01;30 # vim configuration
+.asm   01;30 # assembly source code
 
 # markup files
 .html     01;33 # html
