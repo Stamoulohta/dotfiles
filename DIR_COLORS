@@ -106,6 +106,8 @@ EXEC 01;32
 #.sh 01;32
 #.csh 01;32
 
+# TODO Documents (pdf, doc, ocd etc..)
+
 # archives or compressed (red)
 .tar  00;31
 .tgz  00;31
@@ -140,6 +142,7 @@ EXEC 01;32
 .7z   00;31
 .rz   00;31
 .mxl  00;31 # compressed (zip) MusicXml
+.kmz  01;31 # keyhole markup language zipped
 
 # image formats
 .jpg  00;35
@@ -248,5 +251,7 @@ EXEC 01;32
 .xml      01;33 # xml
 .md       01;33 # mark down
 .mk       01;33 # makefile
+.gpx      01;33 # gps
+.kml      01;33 # keyhole markup language
 *Makefile 01;33 # makefile
 *makefile 01;33 # makefile
