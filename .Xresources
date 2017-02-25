@@ -1,0 +1,81 @@
+! My Xserver tweaks..
+
+! urxvt -----------------------------------------------------------
+
+URxvt*iconFile: /usr/share/icons/my_icons/scalable/apps/urxvt.svg
+!URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0000/ffff
+URxvt*shading: 30
+URxvt*transparent: true
+URxvt*foreground: white
+!URxvt*font: 9x15
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+URxvt*scrollBar: false
+URxvt*geometry: 180x25
+URxvt*loginShell: false
+URxvt*saveLines: 1024
+URxvt*perl-ext-common: default,tabbed
+URxvt*tabbed.tabbar-fg: 2
+URxvt*tabbed.tabbar-bg: 0
+URxvt*tabbed.tab-fg: 15
+URxvt*tabbed.tab-bg: 2
+URxvt*url-launcher: /usr/bin/google-chrome-stable
+URxvt*matcher.button: 1
+URxvt*keysym.C-Delete: perl:matcher:last
+URxvt*keysym.M-Delete: perl:matcher:list
+URxvt*colorUL: #0000ff
+URxvt*perl-ext: default,url-select
+URxvt*keysym.M-u: perl:url-select:select_next
+URxvt*url-select.launcher: /usr/bin/firefox -new-tab
+URxvt*url-select.underline: true
+
+Root_Term.cursorColor: Red
+Root_Term.tintColor: Red
+User_Term.cursorColor: Green
+User_Term.tintColor: Green
+
+!xcalc-----------------------------------------------------------------------
+
+XCalc*geometry:                        200x275
+XCalc.ti.bevel.background:             #111111
+XCalc.ti.bevel.screen.background:      #000000
+XCalc.ti.bevel.screen.DEG.background:  #000000
+XCalc.ti.bevel.screen.DEG.foreground:  LightSeaGreen
+XCalc.ti.bevel.screen.GRAD.background: #000000
+XCalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+XCalc.ti.bevel.screen.RAD.background:  #000000
+XCalc.ti.bevel.screen.RAD.foreground:  LightSeaGreen
+XCalc.ti.bevel.screen.INV.background:  #000000
+XCalc.ti.bevel.screen.INV.foreground:  Red
+XCalc.ti.bevel.screen.LCD.background:  #000000
+XCalc.ti.bevel.screen.LCD.foreground:  LightSeaGreen
+XCalc.ti.bevel.screen.LCD.shadowWidth: 0
+XCalc.ti.bevel.screen.M.background:    #000000
+XCalc.ti.bevel.screen.M.foreground:    LightSeaGreen
+XCalc.ti.bevel.screen.P.background:    #000000
+XCalc.ti.bevel.screen.P.foreground:    Yellow
+XCalc.ti.Command.foreground:  White
+XCalc.ti.Command.background:  #777777
+XCalc.ti.button5.background:  Orange3
+XCalc.ti.button19.background: #611161
+XCalc.ti.button18.background: #611161
+XCalc.ti.button20.background: #611111
+XCalc.ti.button20.label:      /
+XCalc.ti.button25.background: #722222
+XCalc.ti.button30.background: #833333
+XCalc.ti.button35.background: #944444
+XCalc.ti.button40.background: #a55555
+XCalc.ti.button22.background: #222262
+XCalc.ti.button23.background: #222262
+XCalc.ti.button24.background: #222272
+XCalc.ti.button27.background: #333373
+XCalc.ti.button28.background: #333373
+XCalc.ti.button29.background: #333373
+XCalc.ti.button32.background: #444484
+XCalc.ti.button33.background: #444484
+XCalc.ti.button34.background: #444484
+XCalc.ti.button37.background: #555595
+XCalc.ti.button38.background: #555595
+XCalc.ti.button39.background: #555595
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle
