@@ -76,7 +76,7 @@ fi
 # Systemwide Aliases
 
 alias sudo="sudo "
-alias la="ls -a"
+alias la="ls -A"
 alias ll="la -lh"
 alias x="exit"
 alias bye="sudo shutdown -h now"
