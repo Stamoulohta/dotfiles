@@ -52,6 +52,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
+--modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -439,6 +440,12 @@ awful.rules.rules = {
                      screen = awful.screen.preferred,
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen
      }
+    },
+    { rule = { class = "Viber" },
+      properties = { floating = true },
+      callback = function( c )
+                     c:geometry( { width = 1920, heigth = 1000 } )
+                 end
     },
 
     -- Floating clients.

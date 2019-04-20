@@ -76,6 +76,7 @@ fi
 # Systemwide Aliases
 
 alias sudo="sudo "
+alias wsu="wsu "
 alias la="ls -A"
 alias ll="la -lh"
 alias x="exit"

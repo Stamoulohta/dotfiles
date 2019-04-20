@@ -3,8 +3,8 @@
 ! urxvt -----------------------------------------------------------
 
 URxvt*iconFile: /usr/share/icons/my_icons/scalable/apps/urxvt.svg
-!URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/ffff
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
 URxvt*shading: 30
 URxvt*transparent: true
 URxvt*foreground: white

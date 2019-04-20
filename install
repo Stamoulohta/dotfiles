@@ -13,7 +13,8 @@ filepaths+=("vconsole.conf /etc/vconsole.conf")
 filepaths+=("local.conf /etc/fonts/local.conf")
 filepaths+=("locale.conf /etc/locale.conf")
 filepaths+=(".Xresources /etc/X11/xinit/.Xresources")
-filepaths+=(".Xresources /etc/X11/xinit/.Xdefaults")
+filepaths+=(".Xresources ~/.Xresources")
+filepaths+=(".Xresources ~/.Xdefaults")
 
 # Check for root uid and exit of failure.
 if [ $UID -ne 0 ]

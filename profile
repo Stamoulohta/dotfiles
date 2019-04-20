@@ -23,24 +23,26 @@ unset appendpath
 
 export PATH
 
-# Architecture for the void package manager.
-export XBPS_{TARGET_,}ARCH=i686
-
 # Use Wayland
-export QT_QPA_PLATFORM=wayland-egl 	# QT5
-export SDL_VIDEODRIVER=wayland 		# SDL2
+#export QT_QPA_PLATFORM="wayland-egl;xcb"    # QT5
+#export SDL_VIDEODRIVER=wayland             # SDL2
+
+# Wayland Keyboard Configuration
+export XKB_DEFAULT_MODEL="pc105"
+export XKB_DEFAULT_LAYOUT="us,el"
+export XKB_DEFAULT_OPTIONS="grp:alt_shift_toggle,caps:swapescape"
 
 # Load profiles from /etc/profile.d
 if test -d /etc/profile.d/; then
-	for profile in /etc/profile.d/*.sh; do
-		test -r "$profile" && . "$profile"
-	done
-	unset profile
+    for profile in /etc/profile.d/*.sh; do
+        test -r "$profile" && . "$profile"
+    done
+    unset profile
 fi
 
 # Source global bash config
 if test "$PS1" && test "$BASH" && test -z ${POSIXLY_CORRECT+x} && test -r /etc/bash.bashrc; then
-	. /etc/bash.bashrc
+    . /etc/bash.bashrc
 fi
 
 # Termcap is outdated, old, and crusty, kill it.
