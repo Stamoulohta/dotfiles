@@ -15,6 +15,7 @@ filepaths+=("locale.conf /etc/locale.conf")
 filepaths+=(".Xresources /etc/X11/xinit/.Xresources")
 filepaths+=(".Xresources ~/.Xresources")
 filepaths+=(".Xresources ~/.Xdefaults")
+filepaths+=("asus.map.gz /usr/share/kbd/keymaps/i386/qwerty/asus.map.gz")
 
 # Check for root uid and exit of failure.
 if [ $UID -ne 0 ]
