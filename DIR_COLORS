@@ -244,6 +244,7 @@ EXEC 01;32
 .yxx   01;30 # bison source code
 .vim   01;30 # vim configuration
 .asm   01;30 # assembly source code
+.bas   01;30 # basic source code
 
 # markup files
 .html     01;33 # html
