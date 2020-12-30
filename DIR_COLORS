@@ -220,31 +220,31 @@ EXEC 01;32
 .xspf 00;36
 
 # source code
-.c     01;30 # c source code
-.h     01;30 # c header file
-.cpp   01;30 # c++ source code
-.cxx   01;30 # c++ source code
-.hpp   01;30 # c++ header file
-.hxx   01;30 # c++ header file
-.py    01;30 # python source code
-.pyw   01;30 # python (windowed) source code
-.java  01;30 # java source code
-.jsp   01;30 # java server page file
-.js    01;30 # javascript
-.php   01;30 # php file
-.phps  01;30 # php source
-.phtml 01;30 # php/html source
-.lua   01;30 # lua code
-.l     01;30 # lex source code
-.ll    01;30 # lex source code
-.pl    01;30 # perl script
-.sbl   01;30 # basic source
-.scp   01;30 # script source
-.y     01;30 # yacc source code
-.yxx   01;30 # bison source code
-.vim   01;30 # vim configuration
-.asm   01;30 # assembly source code
-.bas   01;30 # basic source code
+.c     01;90 # c source code
+.h     01;90 # c header file
+.cpp   01;90 # c++ source code
+.cxx   01;90 # c++ source code
+.hpp   01;90 # c++ header file
+.hxx   01;90 # c++ header file
+.py    01;90 # python source code
+.pyw   01;90 # python (windowed) source code
+.java  01;90 # java source code
+.jsp   01;90 # java server page file
+.js    01;90 # javascript
+.php   01;90 # php file
+.phps  01;90 # php source
+.phtml 01;90 # php/html source
+.lua   01;90 # lua code
+.l     01;90 # lex source code
+.ll    01;90 # lex source code
+.pl    01;90 # perl script
+.sbl   01;90 # basic source
+.scp   01;90 # script source
+.y     01;90 # yacc source code
+.yxx   01;90 # bison source code
+.vim   01;90 # vim configuration
+.asm   01;90 # assembly source code
+.bas   01;90 # basic source code
 
 # markup files
 .html     01;33 # html
