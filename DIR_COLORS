@@ -247,6 +247,7 @@ EXEC 01;32
 
 # markup files
 .html     01;33 # html
+.json     01;33 # json
 .css      01;33 # cascade style sheet
 .xml      01;33 # xml
 .md       01;33 # mark down
