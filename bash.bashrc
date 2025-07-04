@@ -41,21 +41,21 @@ function get_plain_prompt {
 
 case ${TERM} in
   rxvt*)
-    export EDITOR="gvim"
+    export EDITOR="vim"
     alias su="urxvt -name \"Root_Term\" &"
-    georgey
+    fastfetch
     ;;
   dumb)
     PROMPT_COMMAND=get_plain_prompt
     DISABLE_COLOR=1
     ;;
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*|screen)
-    export EDITOR="gvim"
-    georgey
+    export EDITOR="vim"
+    fastfetch
     ;;
   *linux)
     export EDITOR="vim"
-    georgey
+    fastfetch
     ;;
 esac
 
@@ -82,6 +82,7 @@ alias ll="la -lh"
 alias x="exit"
 alias bye="sudo shutdown -h now"
 alias macmount="mount -t hfsplus -o force,rw"
+alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail) "
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
